@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+#h-image{
+    height: auto;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 450px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    box-shadow: 2px 2px 2px 1px rgb(58, 56, 56)
+}
+
+.divider{
+    width: 430px;
+    background-color: grey;
+}
+
+#content{
+    padding: 5px;
+    margin: 10px;
+}
