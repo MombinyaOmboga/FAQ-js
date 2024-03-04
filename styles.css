@@ -19,7 +19,7 @@ main{
 }
 
 #card{
-    width: 450px;
+    width: 470px;
     height: auto;
     border-radius: 5px;
     background-color: #fff;
@@ -28,9 +28,22 @@ main{
     box-shadow: 2px 2px 2px 1px rgb(58, 56, 56)
 }
 
-.divider{
-    width: 430px;
-    background-color: grey;
+hr{
+    margin: 15px 0 15px 0;
+}
+
+h1{
+    
+}
+
+.p-align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#img{
+    width: 20px;
 }
 
 #content{
