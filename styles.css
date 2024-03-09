@@ -51,7 +51,7 @@ hr{
     cursor: pointer;
 }
 
-#ans{
+.ans{
     margin-top: 20px;
 }
 
@@ -59,6 +59,7 @@ hr{
     padding: 5px;
     margin: 10px;
 }
+
 
 .bold{
     font-weight: bolder;

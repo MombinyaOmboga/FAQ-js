@@ -132,17 +132,26 @@
       document.addEventListener('DOMContentLoaded', function () {
         const plusIcons = document.querySelectorAll('.plus')
         const minusIcons = document.querySelectorAll('.minus')
-        const answerContainers = document.querySelectorAll('.a-align')
 
         plusIcons.forEach((plusIcon, index) => {
           plusIcon.addEventListener('click', function () {
-            answerContainers[index].classList.toggle('show-answer')
+            const questionContainer = this.closest('.quiz-container')
+            const answerContainer = questionContainer.querySelector('.a-align')
+
+            answerContainer.classList.toggle('show-answer')
+            plusIcon.style.display = 'none'
+            minusIcons[index].style.display = 'inline-block'
           })
         })
 
         minusIcons.forEach((minusIcon, index) => {
           minusIcon.addEventListener('click', function () {
-            answerContainers[index].classList.toggle('show-answer')
+            const questionContainer = this.closest('.quiz-container')
+            const answerContainer = questionContainer.querySelector('.a-align')
+
+            answerContainer.classList.toggle('show-answer')
+            minusIcon.style.display = 'none'
+            plusIcons[index].style.display = 'inline-block'
           })
         })
       })
