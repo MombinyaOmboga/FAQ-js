@@ -128,33 +128,8 @@
       <a href="#">Your Name Here</a>
       .
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const plusIcons = document.querySelectorAll('.plus')
-        const minusIcons = document.querySelectorAll('.minus')
-
-        plusIcons.forEach((plusIcon, index) => {
-          plusIcon.addEventListener('click', function () {
-            const questionContainer = this.closest('.quiz-container')
-            const answerContainer = questionContainer.querySelector('.a-align')
-
-            answerContainer.classList.toggle('show-answer')
-            plusIcon.style.display = 'none'
-            minusIcons[index].style.display = 'inline-block'
-          })
-        })
-
-        minusIcons.forEach((minusIcon, index) => {
-          minusIcon.addEventListener('click', function () {
-            const questionContainer = this.closest('.quiz-container')
-            const answerContainer = questionContainer.querySelector('.a-align')
-
-            answerContainer.classList.toggle('show-answer')
-            minusIcon.style.display = 'none'
-            plusIcons[index].style.display = 'inline-block'
-          })
-        })
-      })
+    <script src="./assets/scripts/app.js">
+      </script
     </script>
   </body>
 </html>
