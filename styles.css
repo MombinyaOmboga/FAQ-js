@@ -32,21 +32,35 @@ hr{
     margin: 15px 0 15px 0;
 }
 
-h1{
-    
-}
+  .a-align.show-answer {
+    display: flex;
+  }
 
-.p-align{
+.q-align{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#img{
+.a-align{
+    display: none;
+}
+
+.plus, .minus{
     width: 20px;
+    cursor: pointer;
+}
+
+#ans{
+    margin-top: 20px;
 }
 
 #content{
     padding: 5px;
     margin: 10px;
+}
+
+.bold{
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
 }
