@@ -18,13 +18,20 @@ main{
     align-items: center;
 }
 
+h1 img{
+    margin-right: 10px;
+}
+
+h1{
+    font-weight: bolder;
+}
+
 #card{
     width: 470px;
     height: auto;
     border-radius: 5px;
     background-color: #fff;
     position: absolute;
-    top: 10%;
     box-shadow: 2px 2px 2px 1px rgb(58, 56, 56)
 }
 
@@ -60,8 +67,24 @@ hr{
     margin: 10px;
 }
 
+.quiz{
+    cursor: pointer;
+    color: hsl(292, 42%, 14%);
+}
 
+.quiz:hover{
+    color: hsl(292, 88%, 36%);
+}
 .bold{
     font-weight: bolder;
-    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 768px) { 
+    #content{
+        padding: 0;
+    }   
+
+    .card{
+        margin: 0 auto;
+    }
 }
